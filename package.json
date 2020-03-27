@@ -216,7 +216,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --open --mode=development",
-    "build": "webpack --mode=prodaction"
+    "build": "webpack --mode=production"
   },
   "keywords": [],
   "author": "",
