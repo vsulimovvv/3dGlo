@@ -11,7 +11,7 @@ const timer = () => {
       } else {
         return num;
       }
-    }
+    };
 
     function getTimeRemaining() {
       let dateStop = new Date(deadline).getTime(),
@@ -25,7 +25,7 @@ const timer = () => {
         hours,
         minutes,
         seconds
-      }
+      };
     }
 
     function updateClock() {
@@ -41,8 +41,8 @@ const timer = () => {
       }
     }
     updateClock();
-  };
+  }
   setInterval(countTimer, 1000, '20 june 2020');
-}
+};
 
 export default timer;

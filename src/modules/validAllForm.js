@@ -7,7 +7,7 @@ const validAllForm = () => {
         item.value = item.value.replace(/[^\d+]/g, '');
       });
     });
-  }
+  };
   inputTypeTel();
 
   const inputForm1 = () => {
@@ -15,8 +15,7 @@ const validAllForm = () => {
     form1message.addEventListener('input', () => {
       form1message.value = form1message.value.replace(/[^а-яА-Я]/ig, '');
     });
-  }
-
+  };
   inputForm1();
 
   const inputForm2 = () => {
@@ -28,7 +27,7 @@ const validAllForm = () => {
     form2Name.addEventListener('input', () => {
       form2Name.value = form2Name.value.replace(/[^а-яА-Я]/ig, '');
     });
-  }
+  };
   inputForm2();
 
   const inputForm3 = () => {
@@ -36,18 +35,18 @@ const validAllForm = () => {
     form3message.addEventListener('input', () => {
       form3message.value = form3message.value.replace(/[^а-яА-Я]/ig, '');
     });
-  }
+  };
 
   inputForm3();
 
-  const inputNumber = () => {
+  var inputNumber = () => {
     const inputTypeNumber = document.querySelectorAll('input[type=number]');
     inputTypeNumber.forEach((item) => {
       item.addEventListener('input', () => {
         item.value = item.value.replace(/[^0-9]/, '');
       });
     });
-  }
+  };
   inputNumber();
-}
+};
 export default validAllForm;

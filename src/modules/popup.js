@@ -30,9 +30,9 @@ const popup = () => {
         hContent = -hContent / 2 + 'px';
         popupContent.style.top = timePassed / 16 + '%';
         popupContent.style.marginTop = hContent;
-      }
+      };
     }
-  }
+  };
   popupBtns.forEach(item => {
     item.addEventListener('click', openPopup);
 

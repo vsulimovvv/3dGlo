@@ -10,6 +10,6 @@ const changeImg = () => {
   command.addEventListener('mouseout', event => {
     event.target.src = src;
   });
-}
+};
 
 export default changeImg;

@@ -14,8 +14,8 @@ const slider = () => {
         li.className = 'dot';
       }
       ul.appendChild(li);
-    }
-  }
+    };
+  };
   createDots();
 
   let dot = document.querySelectorAll('.dot');
@@ -104,6 +104,6 @@ const slider = () => {
   });
 
   startSlide(10000);
-}
+};
 
 export default slider;
