@@ -33,9 +33,7 @@ const validAllForm = () => {
   inputForm2();
 
   const inputNumber = () => {
-
-    inputTypeNumber = document.querySelectorAll('input[type=number]');
-
+    const inputTypeNumber = document.querySelectorAll('input[type=number]');
     inputTypeNumber.forEach((item) => {
       item.addEventListener('input', () => {
         item.value = item.value.replace(/[^0-9]/, '');
@@ -44,5 +42,4 @@ const validAllForm = () => {
   }
   inputNumber();
 }
-
 export default validAllForm;
