@@ -29,8 +29,16 @@ const validAllForm = () => {
       form2Name.value = form2Name.value.replace(/[^а-яА-Я]/ig, '');
     });
   }
-
   inputForm2();
+
+  const inputForm3 = () => {
+    const form3message = document.querySelector('#form3-name');
+    form3message.addEventListener('input', () => {
+      form3message.value = form3message.value.replace(/[^а-яА-Я]/ig, '');
+    });
+  }
+
+  inputForm3();
 
   const inputNumber = () => {
     const inputTypeNumber = document.querySelectorAll('input[type=number]');
