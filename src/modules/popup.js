@@ -2,11 +2,16 @@ const popup = () => {
 
   const popup = document.querySelector('.popup'), // popup
     popupContent = document.querySelector('.popup-content'), //popup-content
-    popupBtns = document.querySelectorAll('.popup-btn'); // popup-btns
+    popupBtns = document.querySelectorAll('.popup-btn'),
+    // popupInput = popup.querySelectorAll('input');
+    form3Name = document.querySelector('#form3-name'),
+    form3Phone = document.querySelector('#form3-phone'),
+    form3Email = document.querySelector('#form3-email');
 
   const openPopup = () => {
 
     popup.style.display = 'block'; // показываем попап
+    
 
     if (document.documentElement.clientWidth > 768) { // проверяем ширину браузера
       const start = Date.now(); // записать в переменную время старта анимации
@@ -17,7 +22,6 @@ const popup = () => {
           clearInterval(timer);
           return;
         }
-
         draw(timePassed);
       });
 
@@ -29,16 +33,19 @@ const popup = () => {
       }
     }
   }
-
   popupBtns.forEach(item => {
     item.addEventListener('click', openPopup);
-  });
 
+  });
   popup.addEventListener('click', (event) => {
     let target = event.target;
 
     if (target.classList.contains('popup-close')) {
       popup.style.display = "none";
+      form3Name.value = '';
+      form3Phone.value = '';
+      form3Email.value = '';
+
     } else {
       target = target.closest('.popup-content');
 
