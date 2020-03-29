@@ -14,7 +14,7 @@ const slider = () => {
         li.className = 'dot';
       }
       ul.appendChild(li);
-    };
+    }
   };
   createDots();
 

@@ -14,7 +14,7 @@ const tabs = () => {
         tab[i].classList.remove('active');
         tabContent[i].classList.add('d-none');
       }
-    };
+    }
   };
 
   tabHeader.addEventListener('click', (event) => {
